@@ -1,6 +1,6 @@
-# 💼 SparksWeb In Dev Website
+# 💼 SparksWeb Website
 
-Welcome to the source code of the **SparksWeb** in dev website.
+Welcome to the source code of the SparksWeb portfolio site – our digital showcase for web solutions, SaaS projects, and creative tech work.
 
 Built with a focus on performance and creative design.
 
