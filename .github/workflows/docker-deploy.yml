@@ -17,7 +17,7 @@ jobs:
         run: echo ${{ secrets.SW_WEBSITE_TOKEN }} | docker login ghcr.io -u keinztv --password-stdin
 
       - name: Build Server Image
-        run: docker build -t ghcr.io/sparksweb/website:prod .
+        run: docker build -t ghcr.io/sparkswebdevelopment/website:prod .
 
       - name: Push Server Image
-        run: docker push ghcr.io/sparksweb/website:prod
+        run: docker push ghcr.io/sparkswebdevelopment/website:prod
