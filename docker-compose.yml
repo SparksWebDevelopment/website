@@ -1,7 +1,13 @@
 services:
     sparksweb:
-        image:
+        image: ghcr.io/sparksweb/website:prod
         container_name: sparksweb
         restart: always
         ports:
             - "3000:3000"
+        networks:
+            - proxy-net
+
+networks:
+    proxy-net:
+        external: true
