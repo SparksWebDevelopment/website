@@ -1,0 +1,10 @@
+.output
+.idea
+.github
+.gitignore
+
+docker-compose.*
+Dockerfile
+Dockerfile.*
+LICENSE
+README.md

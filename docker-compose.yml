@@ -1,0 +1,7 @@
+services:
+    sparksweb:
+        image:
+        container_name: sparksweb
+        restart: always
+        ports:
+            - "3000:3000"

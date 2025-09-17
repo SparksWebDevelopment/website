@@ -1,0 +1,23 @@
+name: Docker Deploy Workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-sparksweb:
+    runs-on: ubuntu-latest
+    name: Build & Push SparksWeb Docker Image
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Docker Login
+        run: echo ${{ secrets.SW_WEBSITE_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Build Server Image
+        run: docker build -t ghcr.io/sparksweb/website:prod
+
+      - name: Push Server Image
+        run: docker push ghcr.io/sparksweb/website:prod

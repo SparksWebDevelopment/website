@@ -1,0 +1,23 @@
+services:
+  app:
+    container_name: sparksweb
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: yarn run dev
+    develop:
+      watch:
+        - path: .
+          target: /app
+          action: sync
+        - path: package.json
+          target: /app/package.json
+          action: rebuild
+        - path: package-lock.json
+          target: /app/package-lock.json
+          action: rebuild
