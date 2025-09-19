@@ -31,4 +31,5 @@ If you'd like to collaborate or pitch us something: [contact@sparksweb.fr](mailt
 
 ## ©️ License
 
-Source code is released under the **MIT License** – free to use with attribution.
+Source code is provided for demonstration purposes only - **All rights reserved**.
+
