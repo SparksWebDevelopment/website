@@ -1,13 +1,11 @@
 services:
-    sparksweb:
-        image: ghcr.io/sparkswebdevelopment/website:prod
-        container_name: sparksweb-website
-        restart: always
-        ports:
-            - "3000:3000"
-        networks:
-            - proxy-net
+  sparksweb-website:
+    image: ghcr.io/sparkswebdevelopment/website:prod
+    container_name: sparksweb-website
+    restart: always
+    networks:
+      - proxy-net
 
 networks:
-    proxy-net:
-        external: true
+  proxy-net:
+    external: true
