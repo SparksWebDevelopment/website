@@ -1,7 +1,7 @@
 services:
     sparksweb:
         image: ghcr.io/sparkswebdevelopment/website:prod
-        container_name: sparksweb
+        container_name: sparksweb-website
         restart: always
         ports:
             - "3000:3000"
